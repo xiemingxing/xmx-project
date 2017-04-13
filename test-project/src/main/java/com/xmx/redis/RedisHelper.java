@@ -419,4 +419,9 @@ public class RedisHelper extends RedisProvider{
         }  
         return set;  
     }  
+    
+    public static void main(String[] args) {
+		System.out.println("===================");
+		
+	}
 }
