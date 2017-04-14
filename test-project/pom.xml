@@ -39,6 +39,13 @@
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.7.7</version>
 		</dependency>
+
+		<!-- 获取系统信息 -->
+		<dependency>
+			<groupId>org.fusesource</groupId>
+			<artifactId>sigar</artifactId>
+			<version>1.6.4</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>test-project</finalName>

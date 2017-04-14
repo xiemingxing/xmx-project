@@ -22,7 +22,7 @@ public class RedisUtil {
         Config config = new Config();  
         config.setConnectionPoolSize(10);  
         config.addAddress(address);
-        config.setPassword(password);
+//        config.setPassword("123456");
         Redisson redisson = Redisson.create(config);  
         System.out.println("reids连接成功...");  
         return redisson;
@@ -58,7 +58,7 @@ public class RedisUtil {
         mySet.add("lisi");  
   
         Set<String> resultSet = redisson.getSet("MySet");  
-        System.out.println("resultSet===" + resultSet.size());  
+        System.out.println("resultSet==" + resultSet.size());  
 	}
 	
 	/**
@@ -76,7 +76,7 @@ public class RedisUtil {
         myQueue.poll();  
   
         Queue<String> resultQueue=redisson.getQueue("FirstQueue");  
-        System.out.println("resultQueue==="+resultQueue); 
+        System.out.println("resultQueue=="+resultQueue); 
 	}
 	
 	/**
